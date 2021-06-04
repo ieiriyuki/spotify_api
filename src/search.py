@@ -5,12 +5,12 @@ import json
 import pandas as pd
 import requests
 
-from auth import get_client_confidential
+from auth import get_client_credentials
 
 
 def main():
     base_url ='https://api.spotify.com/v1/search'
-    token = get_client_confidential()
+    token = get_client_credentials()
 
     headers = {
         'Authorization': '{} {}'.format(token['token_type'], token['access_token'])

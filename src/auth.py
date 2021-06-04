@@ -6,7 +6,7 @@ import os
 import requests
 
 
-def get_client_confidential():
+def get_client_credentials():
     """https://developer.spotify.com/documentation/general/guides/authorization-guide/#client-credentials-flow
     """
 
@@ -27,4 +27,4 @@ def get_client_confidential():
 
 
 if __name__ == '__main__':
-    get_client_confidential()
+    get_client_credentials()
